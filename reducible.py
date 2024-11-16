@@ -128,7 +128,6 @@ def is_reducible(s, hash_table, hash_memo):
         if find_word(part_word, hash_table) and is_reducible(part_word, hash_table, hash_memo):
             insert_word(s, hash_memo)
             return True
-        
     return False
 
 def get_longest_words(string_list):
